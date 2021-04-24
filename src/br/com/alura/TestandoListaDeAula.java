@@ -1,8 +1,6 @@
 package br.com.alura;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class TestandoListaDeAula {
@@ -20,7 +18,7 @@ public class TestandoListaDeAula {
 
         System.out.println(aulas);
 
-        aulas.sort(Comparator.comparing(Aula::getTempo));
+        aulas.sort(Comparator.comparing(Aula::getTitulo));
 
         System.out.println(aulas);
 
