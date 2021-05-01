@@ -1,4 +1,3 @@
-package br.com.alura;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -50,6 +49,8 @@ public class TestandoListas {
 
         Collections.sort(aulas);
         System.out.println(aulas);
+
+        // teste
 
     }
 
