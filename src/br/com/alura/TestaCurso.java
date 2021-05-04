@@ -1,3 +1,4 @@
+
 import java.util.List;
 
 public class TestaCurso {
@@ -6,14 +7,14 @@ public class TestaCurso {
 
     public static void main(String[] args) {
 
-        Curso javaColocoes = new Curso("Dominando as coleções do java", "Francisc Júnior");
+        Curso javaColecoes = new Curso("Dominando as coleções do java", "Francisco Júnior");
 
-        List<Aula> aulas = javaColocoes.getAulas();
-        System.out.println(aulas);
+        javaColecoes.adiciona(new Aula("Trabalhando com ArrayList", 21));
+        javaColecoes.adiciona(new Aula("Criando uma aula", 20));
+        javaColecoes.adiciona(new Aula("Modelando com coleções", 22));
 
-        aulas.add(new Aula("Trabalhando com ArrayList", 21));
+        System.out.println(javaColecoes.getAulas());
 
-        System.out.println(aulas);
     }
 
 }
